@@ -68,7 +68,7 @@ path = centos/5.11/x86_64/updates
 createrepo = true
 ```
 
-Override the default reposync options with repo_opts
+Override the default reposync options with sync_opts
 
 /etc/upstream_sync/mariadb.repo
 ```
@@ -76,13 +76,13 @@ Override the default reposync options with repo_opts
 [mariadb-10.1.12-rhel7]
 url = http://yum.mariadb.org/10.1.12/rhel7-amd64/
 path = mariadb/rhel7/x86_64
-repo_opts = --norepopath --tempcache
+sync_opts = --norepopath --tempcache
 createrepo = true
 
 [mariadb-10.1.11-rhel7]
 url = http://yum.mariadb.org/10.1.11/rhel7-amd64/
 path = mariadb/rhel7/x86_64
-repo_opts = --norepopath --tempcache
+sync_opts = --norepopath --tempcache
 createrepo = true
 ```
 
