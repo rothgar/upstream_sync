@@ -187,7 +187,7 @@ def sync_cmd_rsync(repo):
     if repo.has_key('sync_opts'):
         opt_list = repo['sync_opts'].split()
         for opt in opt_list:
-            reposync_opts.append(opt)
+            rsync_opts.append(opt)
     else:
         rsync_opts.append('--no-motd')
         rsync_opts.append('--recursive')
